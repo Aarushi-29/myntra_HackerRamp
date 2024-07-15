@@ -24,6 +24,7 @@ It is all about checking out the latest outfits from popular influencers on Inst
 - [Workflow](#workflow)
   - [Scraping Instagram Data](#scraping-instagram-data)
   - [Saving Images](#saving-images)
+  - [Output Files](#output-files)
   - [TensorFlow Feature Extraction](#tensorflow-feature-extraction)
   - [API Integration](#api-integration)
   - [Getting Product Details](#getting-product-details)
@@ -42,6 +43,13 @@ The scraped images are then saved locally for further processing. These images c
 
 <img src="https://github.com/Aarushi-29/myntra_HackerRamp/blob/main/images/Screenshot%202024-07-16%20013032.png" alt="StyleSync" width="300">
 
+### Output Files
+
+The Instagram data scraping generates three output files:
+- `profile.txt`: Contains raw scraped data.
+- `profiles.csv`: Contains profile information of influencers.
+- `datetime.csv`: Contains timestamps of the scraping process.
+  
 ### TensorFlow Feature Extraction
 
 Next, we use a TensorFlow model to perform feature extraction on the saved images. This model identifies key fashion items and attributes from the images, such as types of clothing, patterns, and colors.
